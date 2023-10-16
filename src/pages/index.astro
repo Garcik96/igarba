@@ -1,0 +1,19 @@
+---
+import AboutMe from '../components/AboutMe.astro'
+import Header from '../components/Header.astro'
+import TechIconsBackground from '../components/TechIconsBackground.astro'
+import Timeline from '../components/Timeline.astro'
+import YellowBackground from '../components/YellowBackground.astro'
+import BaseLayout from '../layouts/Base.astro'
+---
+
+<BaseLayout>
+	<YellowBackground>
+		<div class='relative | overflow-hidden | flex flex-col items-center justify-center'>
+			<Header />
+			<AboutMe />
+			<TechIconsBackground />
+		</div>
+	</YellowBackground>
+	<Timeline />
+</BaseLayout>

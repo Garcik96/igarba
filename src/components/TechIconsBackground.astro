@@ -1,0 +1,132 @@
+---
+import Angular from './icons/technologies/Angular.astro'
+import AstroIcon from './icons/technologies/Astro.astro'
+import Atlassian from './icons/technologies/Atlassian.astro'
+import CSS from './icons/technologies/CSS.astro'
+import Cypress from './icons/technologies/Cypress.astro'
+import ESLint from './icons/technologies/ESLint.astro'
+import Figma from './icons/technologies/Figma.astro'
+import Git from './icons/technologies/Git.astro'
+import GitHub from './icons/technologies/GitHub.astro'
+import GitLab from './icons/technologies/GitLab.astro'
+import HTML from './icons/technologies/HTML.astro'
+import IntelliJ from './icons/technologies/IntelliJ.astro'
+import Jasmine from './icons/technologies/Jasmine.astro'
+import Java from './icons/technologies/Java.astro'
+import JavaScript from './icons/technologies/JavaScript.astro'
+import Jenkins from './icons/technologies/Jenkins.astro'
+import Karma from './icons/technologies/Karma.astro'
+import Markdown from './icons/technologies/Markdown.astro'
+import MongoDB from './icons/technologies/MongoDB.astro'
+import NPM from './icons/technologies/NPM.astro'
+import NestJs from './icons/technologies/NestJs.astro'
+import NodeJs from './icons/technologies/NodeJs.astro'
+import Notion from './icons/technologies/Notion.astro'
+import Nvm from './icons/technologies/Nvm.astro'
+import OpenShift from './icons/technologies/OpenShift.astro'
+import Oracle from './icons/technologies/Oracle.astro'
+import Pnpm from './icons/technologies/Pnpm.astro'
+import Postman from './icons/technologies/Postman.astro'
+import Prettier from './icons/technologies/Prettier.astro'
+import ReactJs from './icons/technologies/ReactJs.astro'
+import Redux from './icons/technologies/Redux.astro'
+import RxJs from './icons/technologies/RxJs.astro'
+import Sass from './icons/technologies/Sass.astro'
+import SonarQube from './icons/technologies/SonarQube.astro'
+import Spring from './icons/technologies/Spring.astro'
+import TailwindCSS from './icons/technologies/TailwindCSS.astro'
+import TypeScript from './icons/technologies/TypeScript.astro'
+import Vercel from './icons/technologies/Vercel.astro'
+import VisualStudioCode from './icons/technologies/VisualStudioCode.astro'
+import Vite from './icons/technologies/Vite.astro'
+import Webpack from './icons/technologies/Webpack.astro'
+---
+
+<div class='absolute inset-0 -z-10'>
+	<div
+		id='icons'
+		class='relative [&>svg]:p-4 [&>svg]:w-24 [&>svg]:h-24 [&>svg]:fill-current [&>svg]:opacity-0 [&>svg]:absolute h-full'
+	>
+		<Angular />
+		<AstroIcon />
+		<Atlassian />
+		<CSS />
+		<Cypress />
+		<ESLint />
+		<Figma />
+		<Git />
+		<GitHub />
+		<GitLab />
+		<HTML />
+		<IntelliJ />
+		<Jasmine />
+		<Java />
+		<JavaScript />
+		<Jenkins />
+		<Karma />
+		<Markdown />
+		<MongoDB />
+		<NestJs />
+		<NodeJs />
+		<Notion />
+		<NPM />
+		<Nvm />
+		<OpenShift />
+		<Oracle />
+		<Pnpm />
+		<Postman />
+		<Prettier />
+		<ReactJs />
+		<Redux />
+		<RxJs />
+		<Sass />
+		<SonarQube />
+		<Spring />
+		<TailwindCSS />
+		<TypeScript />
+		<Vercel />
+		<VisualStudioCode />
+		<Vite />
+		<Webpack />
+	</div>
+</div>
+<script type='module'>
+	const hero = document.getElementById('icons')
+	const svgs = Array.from(hero.querySelectorAll('svg'))
+
+	let w = window.innerWidth
+	let h = window.innerHeight
+
+	window.addEventListener('resize', () => {
+		w = window.innerWidth
+		h = window.innerHeight
+	})
+
+	function animateBackgroundIcons () {
+		const availableSvgs = svgs.filter((svg) => !svg.isAnimating)
+		const svgToAnimate = availableSvgs[Math.floor(Math.random() * availableSvgs.length)]
+		if (!svgToAnimate) return
+
+		svgToAnimate.addEventListener(
+			'animationend',
+			() => {
+				svgToAnimate.classList.remove('animate-moving-background')
+				svgToAnimate.removeAttribute('style')
+				svgToAnimate.isAnimating = false
+			},
+			{ once: true }
+		)
+
+		svgToAnimate.setAttribute(
+			'style',
+			`top: ${Math.floor(Math.random() * h)}px;
+				left: ${Math.floor(Math.random() * w)}px;`
+		)
+
+		svgToAnimate.classList.add('animate-moving-background')
+		svgToAnimate.isAnimating = true
+	}
+
+	setInterval(animateBackgroundIcons, 800)
+	animateBackgroundIcons()
+</script>
