@@ -4,7 +4,7 @@
 
 Este es mi portfolio personal, `creado con Astro 🚀`, donde vas a poder encontrar tanto mi experiencia profesional como otros proyectos personales.
 
-[![og (1)](/public/igarcia-dev-laptop.png)]
+![og (1)](/public/igarcia-dev-dektop.png)
 
 ## Como probar el proyecto
 
