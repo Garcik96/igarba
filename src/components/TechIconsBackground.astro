@@ -102,7 +102,7 @@ import Webpack from './icons/technologies/Webpack.astro'
 		h = window.innerHeight
 	})
 
-	function animateBackgroundIcons () {
+	function animateBackgroundIcons() {
 		const availableSvgs = svgs.filter((svg) => !svg.isAnimating)
 		const svgToAnimate = availableSvgs[Math.floor(Math.random() * availableSvgs.length)]
 		if (!svgToAnimate) return
