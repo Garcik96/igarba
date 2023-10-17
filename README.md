@@ -4,20 +4,20 @@
 
 Este es mi portfolio personal, `creado con Astro 🚀`, donde vas a poder encontrar tanto mi experiencia profesional como otros proyectos personales.
 
-![og (1)](/public/igarcia-dev-dektop.png)
+![og (1)](/public/igarba-dektop.png)
 
 ## Como probar el proyecto
 
 1. Clonar el repositorio
 
 - ```
-  git clone https://github.com/Garcik96/igarcia-dev.git
+  git clone https://github.com/Garcik96/igarba.git
   ```
 
 2. Acceder al directorio
 
 - ```
-  cd igarcia-dev
+  cd igarba
   ```
 
 3. Instalar dependencias
