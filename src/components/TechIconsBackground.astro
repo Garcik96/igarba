@@ -45,7 +45,13 @@ import Webpack from './icons/technologies/Webpack.astro'
 <div class='absolute inset-0 -z-10'>
 	<div
 		id='icons'
-		class='relative [&>svg]:p-4 [&>svg]:w-24 [&>svg]:h-24 [&>svg]:fill-current [&>svg]:opacity-0 [&>svg]:absolute h-full'
+		class='relative
+      h-full
+      [&>svg]:w-24 [&>svg]:h-24
+      [&>svg]:p-4
+      [&>svg]:fill-current
+      [&>svg]:opacity-0
+      [&>svg]:absolute'
 	>
 		<Angular />
 		<AstroIcon />
@@ -90,6 +96,7 @@ import Webpack from './icons/technologies/Webpack.astro'
 		<Webpack />
 	</div>
 </div>
+
 <script type='module'>
 	const hero = document.getElementById('icons')
 	const svgs = Array.from(hero.querySelectorAll('svg'))
@@ -102,7 +109,7 @@ import Webpack from './icons/technologies/Webpack.astro'
 		h = window.innerHeight
 	})
 
-	function animateBackgroundIcons() {
+	function animateBackgroundIcons () {
 		const availableSvgs = svgs.filter((svg) => !svg.isAnimating)
 		const svgToAnimate = availableSvgs[Math.floor(Math.random() * availableSvgs.length)]
 		if (!svgToAnimate) return
@@ -120,13 +127,13 @@ import Webpack from './icons/technologies/Webpack.astro'
 		svgToAnimate.setAttribute(
 			'style',
 			`top: ${Math.floor(Math.random() * h)}px;
-				left: ${Math.floor(Math.random() * w)}px;`
+			left: ${Math.floor(Math.random() * w)}px;`
 		)
 
 		svgToAnimate.classList.add('animate-moving-background')
 		svgToAnimate.isAnimating = true
 	}
 
-	setInterval(animateBackgroundIcons, 800)
+	setInterval(animateBackgroundIcons, 1000)
 	animateBackgroundIcons()
 </script>
