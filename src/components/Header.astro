@@ -39,7 +39,7 @@ import MenuIcon from './icons/MenuIcon.astro'
 				<a href='#myCV' class='text-xl | hover:border-b-black hover:text-black'>Experiencia</a>
 				<div class='pl-2 lg:pl-0'>
 					<span class='bg-igarcia-orange-1000 rounded | px-2.5 py-0.5 | text-black font-semibold'
-					>Proximamente
+						>Proximamente
 					</span>
 				</div>
 			</li>
@@ -48,7 +48,7 @@ import MenuIcon from './icons/MenuIcon.astro'
 				<a href='/#projects' class='text-xl | hover:border-b-black hover:text-black'>Proyectos</a>
 				<div class='pl-2 lg:pl-0'>
 					<span class='bg-igarcia-orange-1000 rounded | px-2.5 py-0.5 | text-black font-semibold'
-					>Proximamente
+						>Proximamente
 					</span>
 				</div>
 			</li>
@@ -63,11 +63,14 @@ import MenuIcon from './icons/MenuIcon.astro'
 
 	navbar.querySelectorAll('a').forEach((anchor) => {
 		anchor.addEventListener('click', (_event) => {
-			menuCheckbox.checked = false
+			if (document.body.style.overflowY === 'hidden') {
+				hideOverFlow(false)
+				menuCheckbox.checked = false
+			}
 		})
 	})
 
-	function hideOverFlow (value) {
+	function hideOverFlow(value) {
 		if (value) {
 			window.scrollTo(0, 0)
 			document.body.style.overflowY = 'hidden'
