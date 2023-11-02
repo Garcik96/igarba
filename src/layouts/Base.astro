@@ -17,9 +17,7 @@ const { title = 'Iván García Ballesteros - Frontend Developer' } = Astro.props
 		<title>{title}</title>
 	</head>
 
-	<body class='overflow-x-hidden | bg-black'>
+	<body class='flex flex-col justify-center items-center | overflow-x-hidden | bg-black'>
 		<slot />
 	</body>
 </html>
-
-<style is:global></style>

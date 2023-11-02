@@ -2,31 +2,31 @@
 import MenuIcon from './icons/MenuIcon.astro'
 ---
 
-<header class='w-full | p-6 | flex items-center lg:justify-center | text-center'>
+<header class='w-full | p-6 | flex items-center md:justify-center | text-center'>
 	<input type='checkbox' id='menu' hidden class='peer' />
 	<label
 		for='menu'
 		class='relative
       z-50
-      lg:hidden
+      md:hidden
       peer-checked:[&>.first]:hidden
       peer-checked:[&>.last]:block'
 	>
 		<MenuIcon />
 	</label>
 	<nav
-		class='min-h-screen lg:min-h-0
-      py-24 lg:py-0
-      absolute lg:static left-0 right-0 top-0
+		class='min-h-screen md:min-h-0
+      py-24 md:py-0
+      absolute md:static left-0 right-0 top-0
       z-40
       hidden
-      bg-white lg:bg-inherit bg-opacity-40 backdrop-blur-lg lg:backdrop-blur-0
+      bg-white md:bg-inherit bg-opacity-40 backdrop-blur-lg md:backdrop-blur-0
       peer-checked:block
-      lg:block'
+      md:block'
 		id='navbar'
 	>
 		<ul
-			class='flex flex-col lg:flex-row items-center lg:items-start gap-x-8 gap-y-4
+			class='flex flex-col md:flex-row items-center md:items-start gap-x-8 gap-y-4
       text-slate-700 font-semibold tracking-tight
       [&>li>a]:border-b-2 [&>li>a]:border-b-transparent
       [&>li>a]:transition-all'
@@ -35,19 +35,15 @@ import MenuIcon from './icons/MenuIcon.astro'
 				<a href='/' class='text-xl | hover:border-b-black hover:text-black'>Sobre mí</a>
 			</li>
 
-			<li class='flex lg:flex-col items-center gap-3'>
-				<a href='#myCV' class='text-xl | hover:border-b-black hover:text-black'>Experiencia</a>
-				<div class='pl-2 lg:pl-0'>
-					<span class='bg-igarcia-orange-1000 rounded | px-2.5 py-0.5 | text-black font-semibold'
-					>Proximamente
-					</span>
-				</div>
+			<li class='flex md:flex-col items-center gap-3'>
+				<a href='#experience' class='text-xl | hover:border-b-black hover:text-black'>Experiencia</a
+				>
 			</li>
 
-			<li class='flex lg:flex-col items-center gap-3'>
+			<li class='flex md:flex-col items-center gap-3'>
 				<a href='/#projects' class='text-xl | hover:border-b-black hover:text-black'>Proyectos</a>
-				<div class='pl-2 lg:pl-0'>
-					<span class='bg-igarcia-orange-1000 rounded | px-2.5 py-0.5 | text-black font-semibold'
+				<div class='pl-2 md:pl-0'>
+					<span class='bg-igarba-orange-1000 rounded | px-2.5 py-0.5 | text-black font-semibold'
 					>Proximamente
 					</span>
 				</div>
@@ -58,7 +54,7 @@ import MenuIcon from './icons/MenuIcon.astro'
 
 <script type='module'>
 	const menuCheckbox = document.querySelector('#menu')
-	const mediaQuery = window.matchMedia('(min-width: 1024px)') // Breakpoint lg
+	const mediaQuery = window.matchMedia('(min-width: 768px)') // Breakpoint md
 	const navbar = document.querySelector('#navbar')
 
 	navbar.querySelectorAll('a').forEach((anchor) => {

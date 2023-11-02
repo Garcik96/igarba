@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				igarcia: {
+				igarba: {
 					orange: {
 						100: '#FFFAEB',
 						200: '#FFF4D7',
@@ -16,7 +16,8 @@ export default {
 						700: '#FFD973',
 						800: '#FFD35F',
 						900: '#FFCE4B',
-						1000: '#FFC837'
+						1000: '#FFC837',
+						1100: '#CCA02C'
 					},
 					yellow: {
 						100: '#FFFEE6',
