@@ -1,10 +1,10 @@
-# Portfolio de Iván García Ballesteros
+# Portfolio de Iván García Ballesteros - [igarba.es](igarba.es)
 
 ## Descripción
 
 Este es mi portfolio personal, `creado con Astro 🚀`, donde vas a poder encontrar tanto mi experiencia profesional como otros proyectos personales.
 
-![og (1)](/public/mockups/igarba-desktop.png)
+[![Mockup igarba.es](/public/mockups/igarba-mockup.png)](igarba.es)
 
 ## Como probar el proyecto
 
