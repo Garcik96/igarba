@@ -1,0 +1,53 @@
+[
+  {
+    "type": "work",
+    "name": "Plexus Tech",
+    "url": "https://www.plexus.es",
+    "img": "plexus_logo",
+    "title": "Frontend Developer",
+    "startDate": "01/08/2022"
+  },
+  {
+    "type": "work",
+    "name": "Capgemini",
+    "url": "https://www.capgemini.com",
+    "img": "capgemini_logo",
+    "title": "Software Developer",
+    "startDate": "01/07/2021",
+    "endDate": "31/08/2022"
+  },
+  {
+    "type": "internships",
+    "name": "Capgemini",
+    "url": "https://www.capgemini.com",
+    "img": "capgemini_logo",
+    "title": "Software Developer",
+    "startDate": "01/11/2020",
+    "endDate": "31/07/2021"
+  },
+  {
+    "type": "school",
+    "name": "Universidad de Valencia",
+    "url": "https://www.uv.es",
+    "img": "uv_logo",
+    "title": "Grado en Ingeniería Informática",
+    "startDate": "01/09/2016",
+    "endDate": "30/06/2022"
+  },
+  {
+    "type": "internships",
+    "name": "GnommoStudios",
+    "title": "Frontend Developer",
+    "startDate": "01/02/2016",
+    "endDate": "30/06/2016"
+  },
+  {
+    "type": "school",
+    "name": "Progresa Centro de Formación Profesional",
+    "url": "https://www.cieep.com",
+    "img": "progresa_logo",
+    "title": "Grado Superior de Desarrollo de Aplicaciones Multiplataforma",
+    "startDate": "01/09/2014",
+    "endDate": "30/06/2016"
+  }
+]
