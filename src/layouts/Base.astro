@@ -1,4 +1,6 @@
 ---
+import '@fontsource-variable/onest'
+
 interface Props {
 	title?: string
 }
@@ -29,3 +31,10 @@ const { title = 'Iván García Ballesteros - Frontend Developer' } = Astro.props
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	html,
+	body {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+	}
+</style>
