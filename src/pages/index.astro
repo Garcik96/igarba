@@ -1,19 +1,23 @@
 ---
 import AboutMe from '../components/AboutMe.astro'
-import ExperienceTimeline from '../components/ExperienceTimeline.astro'
+import Experience from '../components/Experience.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import TechIconsBackground from '../components/TechIconsBackground.astro'
 import YellowBackground from '../components/YellowBackground.astro'
-import BaseLayout from '../layouts/Base.astro'
+import Layout from '../layouts/Layout.astro'
 ---
 
-<BaseLayout>
-	<YellowBackground>
+<Layout>
+	<YellowBackground className={'[clip-path:polygon(0_0,100%_0,100%_90%,0%_100%)]'}>
 		<Header />
 		<AboutMe />
 		<TechIconsBackground />
 	</YellowBackground>
-	<ExperienceTimeline />
-	<Footer />
-</BaseLayout>
+
+	<Experience />
+
+	<YellowBackground>
+		<Footer />
+	</YellowBackground>
+</Layout>

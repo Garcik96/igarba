@@ -1,12 +1,9 @@
+---
+const { className } = Astro.props
+---
+
 <section
-	class='w-full | relative | flex flex-col items-center | overflow-hidden | bg-gradient-to-r from-igarba-yellow-1000 via-igarba-yellow-1000 to-igarba-orange-1000 | clip-path'
+	class=`w-full | relative | flex flex-col items-center | overflow-hidden | bg-gradient-to-r from-igarba-yellow-1000 via-igarba-yellow-1000 to-igarba-orange-1000 | ${className}`
 >
 	<slot />
 </section>
-
-<style>
-	.clip-path {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-	}
-</style>
