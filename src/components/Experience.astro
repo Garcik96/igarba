@@ -13,10 +13,14 @@ import ExperienceItem from './ExperienceItem.astro'
 		Experiencia
 	</h1>
 
-	<ol class='relative | border-s border-gray-200'>
+	<ol>
 		{
-			EXPERIENCE.map((experience) => (
-				<li class='ms-4 | mb-12'>
+			EXPERIENCE.map((experience, index, arr) => (
+				<li
+					class={`ps-4 | relative | border-s border-gray-200 ${
+						index !== arr.length - 1 ? 'pb-12' : 'pb-2'
+					}`}
+				>
 					<ExperienceItem {...experience} />
 				</li>
 			))
