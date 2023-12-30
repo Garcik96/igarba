@@ -1,52 +1,53 @@
 [
   {
     "type": "work",
-    "name": "Plexus Tech",
+    "organization": "Plexus Tech",
     "url": "https://www.plexus.es",
-    "img": "plexus_logo",
     "title": "Frontend Developer",
+    "description": "<p>He participado en los distintos proyectos de contratación de seguros de protección para el Banco Santander, en los que he podido aportar:</p><ul><li>Desarrollo de nuevos evolutivos utilizando Angular</li><li>Mantenimiento del código legacy y migraciones a las nuevas versiones de Angular</li><li>Control del estado de la aplicación haciendo uso del patrón Redux con librerías como NgRx y Akita</li><li>Implementación de test unitarios mediante Karma y Jasmine</li><li>Implementación de test E2E con Cypress</li><li>Maquetación responsive de las aplicaciones para así unificar las interfaces de los distintos productos</li><li>Implementación de componentes propios, proporcionados por el cliente y de librerías externas como Angular Material</li><li>Gestión de control de versiones (Git) e integración continua (CI/CD) con Jenkins</li><li>Apoyo de forma puntual es desarrollos de back utilizando Spring Boot</li></ul><p>Lo que implica en la mejora de la calidad y estabilidad de los productos, consiguiendo un incremento de las contrataciones, llegando así a superar cada mes las cuotas de ventas propuestas.</p>",
     "startDate": "01/08/2022"
   },
   {
     "type": "work",
-    "name": "Capgemini",
+    "organization": "Capgemini",
     "url": "https://www.capgemini.com",
-    "img": "capgemini_logo",
     "title": "Software Developer",
+    "description": "<p>He participado en el desarrollo de las aplicaciones utilizadas por los empleados en tienda de Mercadona, referentes a la generación de órdenes de fabricación, donde he aportado:</p><ul><li>Desarrollo de nuevos evolutivos y mantenimientos de código legacy utilizando ExtJS y Spring Boot</li><li>Gestión de control de versiones (Git) e integración continua</li><li>Migración del framework en el front, pasando de ExtJs a Angular</li></ul><p>Lo que implica en la optimización de las aplicaciones, consiguiendo así mejorar los tiempos de preparación por parte de los empleados del cliente y su gasto en materiales.</p>",
     "startDate": "01/07/2021",
     "endDate": "31/08/2022"
   },
   {
-    "type": "internships",
-    "name": "Capgemini",
+    "type": "work",
+    "organization": "Capgemini",
     "url": "https://www.capgemini.com",
-    "img": "capgemini_logo",
-    "title": "Software Developer",
+    "title": "Software Developer (contrato de prácticas)",
+    "description": "<p>Desarrollo de una nueva aplicación interna, hasta llegar a la creación de un producto mínimo viable, utilizando Angular y Spring Boot, logrando automatizar y, por tanto, agilizar la gestión de documentación del equipo de trabajo encargado en el desarrollo de aplicaciones en tienda de Mercadona referentes a la generación de órdenes de fabricación para los empleados.</p>",
     "startDate": "01/11/2020",
     "endDate": "31/07/2021"
   },
   {
     "type": "school",
-    "name": "Universidad de Valencia",
+    "organization": "Universidad de Valencia",
     "url": "https://www.uv.es",
-    "img": "uv_logo",
     "title": "Grado en Ingeniería Informática",
+    "description": "<p class='italic'>Titulación no terminada a falta de entrega del TFG</p>",
     "startDate": "01/09/2016",
     "endDate": "30/06/2022"
   },
   {
-    "type": "internships",
-    "name": "GnommoStudios",
-    "title": "Frontend Developer",
+    "type": "work",
+    "organization": "GnommoStudios",
+    "title": "Frontend Developer (contrato de prácticas)",
+    "description": "<p>Desarrollo de nuevos evolutivos con AngularJS</p>",
     "startDate": "01/02/2016",
     "endDate": "30/06/2016"
   },
   {
     "type": "school",
-    "name": "Progresa Centro de Formación Profesional",
+    "organization": "Progresa Centro de Formación Profesional",
     "url": "https://www.cieep.com",
-    "img": "progresa_logo",
     "title": "Grado Superior de Desarrollo de Aplicaciones Multiplataforma",
+    "description": "",
     "startDate": "01/09/2014",
     "endDate": "30/06/2016"
   }

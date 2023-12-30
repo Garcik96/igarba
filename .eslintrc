@@ -10,7 +10,8 @@
     "plugin:@typescript-eslint/recommended",
     "eslint-config-prettier",
     "standard",
-    "plugin:astro/recommended"
+    "plugin:astro/recommended",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

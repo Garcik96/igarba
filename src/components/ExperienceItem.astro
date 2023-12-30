@@ -1,0 +1,102 @@
+---
+import moment from 'moment'
+
+import Briefcase from './icons/Briefcase.astro'
+import School from './icons/School.astro'
+
+interface Props {
+	type: string
+	organization: string
+	url?: string
+	title: string
+	description: string
+	startDate: string
+	endDate?: string
+}
+
+const { type, organization, url, title, description, startDate, endDate } = Astro.props
+
+const getFormatDate = (dateString: string): string => {
+	interface IMonths {
+		[key: number]: string
+	}
+
+	const Months: IMonths = {
+		0: 'Enero',
+		1: 'Febrero',
+		2: 'Marzo',
+		3: 'Abril',
+		4: 'Mayo',
+		5: 'Junio',
+		6: 'Julio',
+		7: 'Agosto',
+		8: 'Septiembre',
+		9: 'Octubre',
+		10: 'Noviembre',
+		11: 'Diciembre'
+	}
+
+	const date = moment(dateString, 'DD/MM/YYYY')
+
+	return `${Months[date.month()]} ${date.year()}`
+}
+
+const getDateDiffInMonth = (): number => {
+	const startDateMoment = moment(startDate, 'DD/MM/YYYY')
+	const endDateMoment = moment(endDate ?? new Date(), 'DD/MM/YYYY')
+	return endDateMoment.diff(startDateMoment, 'months') + 1
+}
+
+const getDateDiffInYears = (): number => {
+	const startDateMoment = moment(startDate, 'DD/MM/YYYY')
+	const endDateMoment = moment(endDate ?? new Date(), 'DD/MM/YYYY')
+	return endDateMoment.diff(startDateMoment, 'years')
+}
+
+const getDateDiff = (): string => {
+	const years = getDateDiffInYears()
+	const months = getDateDiffInMonth() % 12
+
+	const yearsString = years === 1 ? `${years} año` : `${years} años`
+	const monthsString = months === 1 ? `${months} mes` : `${months} meses`
+
+	if (!years) return monthsString
+
+	if (!months) return yearsString
+
+	return `${yearsString} y ${monthsString}`
+}
+---
+
+<div class='absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700'>
+</div>
+
+<time
+	class=`text-sm leading-none ${type === 'work' ? 'text-igarba-orange-400' : 'text-igarba-purple-0'}`
+>
+	{getFormatDate(startDate)} - {endDate ? getFormatDate(endDate) : 'Actualidad'}
+	{type !== 'school' && <span class='text-gray-500'>&nbsp;({getDateDiff()})</span>}
+</time>
+
+<h3
+	class=`text-lg font-semibold ${type === 'work' ? 'text-igarba-yellow-700' : 'text-igarba-purple-300'}`
+>
+	{title}
+</h3>
+
+<h5 class='text-md text-gray-300'>
+	{
+		url ? (
+			<a class='hover:underline hover:cursor-pointer' href={url} target='_blank'>
+				{organization}
+			</a>
+		) : (
+			organization
+		)
+	}
+</h5>
+
+<div
+	class='mt-3 | lg:max-w-[70ch] | [&>p]:text-base [&>p]:font-normal [&>p]:text-pretty [&>p]:text-white | [&>ul]:my-2 [&>ul]:pl-6 [&>ul]:list-disc [&>ul]:list-outside [&>ul]:text-base [&>ul]:font-normal [&>ul]:text-pretty [&>ul]:text-white'
+	set:html={description}
+/>
