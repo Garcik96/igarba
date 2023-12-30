@@ -10,8 +10,7 @@
     "plugin:@typescript-eslint/recommended",
     "eslint-config-prettier",
     "standard",
-    "plugin:astro/recommended",
-    "plugin:prettier/recommended"
+    "plugin:astro/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -44,9 +43,7 @@
         "parser": "@typescript-eslint/parser",
         "extraFileExtensions": [".astro"]
       },
-      "rules": {
-        "astro/no-set-html-directive": "error"
-      }
+      "rules": {}
     }
   ]
 }
