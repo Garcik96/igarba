@@ -1,0 +1,21 @@
+---
+import ProjectItem from './ProjectItem.astro'
+---
+
+<section
+	id='projects'
+	class='w-full max-w-7xl | px-12 mt-16 mb-14 | flex flex-col items-center gap-16 | overflow-hidden'
+>
+	<h1
+		class='text-5xl md:text-7xl !leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-igarba-orange-800 via-igarba-orange-1000 to-igarba-orange-700'
+	>
+		Proyectos
+	</h1>
+
+	<div class='w-full | grid md:grid-cols-10 auto-rows-[20rem] gap-4 md:gap-8'>
+		<ProjectItem colSpan={3} />
+		<ProjectItem colSpan={6} />
+		<ProjectItem colSpan={6} />
+		<ProjectItem colSpan={4} />
+	</div>
+</section>
