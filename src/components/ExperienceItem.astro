@@ -81,20 +81,18 @@ const getDateDiff = (): string => {
 	<span class='text-md text-gray-300'>
 		-
 		{
-			url
-				? (
-					<a class='hover:underline hover:cursor-pointer' href={url} target='_blank'>
-						{organization}
-					</a>
-				)
-				: (
-					organization
-				)
+			url ? (
+				<a class='hover:underline hover:cursor-pointer' href={url} target='_blank'>
+					{organization}
+				</a>
+			) : (
+				organization
+			)
 		}
 	</span>
 </h3>
 
-{
+<!-- {
 	type === 'work' && (
 		<div class='mt-5'>
 			<a class='bg-slate-700 hover:bg-slate-500 text-white | py-2 px-4 | rounded | cursor-pointer'>
@@ -102,4 +100,4 @@ const getDateDiff = (): string => {
 			</a>
 		</div>
 	)
-}
+} -->
