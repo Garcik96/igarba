@@ -26,33 +26,35 @@ const { img, title, description } = data || {}
     [&>*]:transition [&>*]:duration-150 [&>*]:ease-in-out`
 >
 	{
-		data ? (
-			<>
-				<Image class='opacity-5 group-hover:opacity-50' src={img!} alt={title!} />
+		data
+			? (
+				<>
+					<Image class='opacity-5 group-hover:opacity-50' src={img!} alt={title!} />
 
-				<h2 class='text-white text-xl font-bold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
-					{title!}
-				</h2>
+					<h2 class='text-white text-xl font-bold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
+						{title!}
+					</h2>
 
-				<p class='text-gray-400 text-md font-semibold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
-					{description!}
-				</p>
+					<p class='text-gray-400 text-md font-semibold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
+						{description!}
+					</p>
 
-				<a
-					class='bg-zinc-700 hover:bg-zinc-500
+					<a
+						class='bg-zinc-700 hover:bg-zinc-500
         text-white
         py-2 px-4
         mt-2
         rounded
         cursor-pointer
         translate-y-[4.5rem] group-hover:translate-y-0'
-				>
+					>
 					Ver proyecto
-				</a>
-			</>
-		) : (
-			<span class='text-white text-2xl'>Proximamente</span>
-		)
+					</a>
+				</>
+			)
+			: (
+				<span class='text-white text-2xl'>Proximamente</span>
+			)
 	}
 </article>
 
