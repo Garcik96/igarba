@@ -1,5 +1,10 @@
 ---
-import { Image } from 'astro:assets'
+interface ImageMetadata {
+	src: string
+	width: number
+	height: number
+	format: string
+}
 
 interface Props {
 	className: string
@@ -11,7 +16,7 @@ interface Props {
 }
 
 const { className, data } = Astro.props
-const { img, title, description } = data || {}
+const { title, description } = data || {}
 ---
 
 <article
@@ -29,8 +34,6 @@ const { img, title, description } = data || {}
 		data
 			? (
 				<>
-					<Image class='opacity-5 group-hover:opacity-50' src={img!} alt={title!} />
-
 					<h2 class='text-white text-xl font-bold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
 						{title!}
 					</h2>
