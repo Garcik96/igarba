@@ -22,42 +22,72 @@ import Linkedin from './icons/technologies/Linkedin.astro'
 		</p>
 		<div class='flex items-center gap-6 | mt-2 lg:mt-0'>
 			<a
-				class='[&>svg]:w-10 [&>svg]:h-10 [&>svg]:opacity-80 hover:[&>svg]:opacity-100 | hover:scale-110'
+				class='flex justify-center items-center gap-2
+          py-2 px-4
+          rounded
+          text-black font-semibold
+          bg-slate-50
+          border border-slate-400 hover:border-transparent
+          hover:shadow-md
+          hover:-translate-y-1
+          transition duration-150 ease-in-out
+          [&>svg]:w-6 [&>svg]:h-6'
 				href='https://github.com/Garcik96'
 				target='_blank'
 			>
 				<GitHub />
+				<span>GitHub</span>
 			</a>
+
 			<a
-				class='[&>svg]:w-10 [&>svg]:h-10 [&>svg]:opacity-80 hover:[&>svg]:opacity-100 | hover:scale-110'
+				class='flex justify-center items-center gap-2
+          py-2 px-4
+          rounded
+          text-black font-semibold
+          bg-blue-50
+          border border-blue-300 hover:border-transparent
+          hover:shadow-md
+          hover:-translate-y-1
+          transition duration-150 ease-in-out
+          [&>svg]:w-6 [&>svg]:h-6'
 				href='https://www.linkedin.com/in/iván-garcía-ballesteros/'
 				target='_blank'
 			>
 				<Linkedin />
+				<span>LinkedIn</span>
 			</a>
-			<a href='/cv-iván-garcía-ballesteros.pdf' download='cv-iván-garcía-ballesteros.pdf'>
-				<button
-					class='flex justify-center items-center gap-2 | py-2 px-4 | rounded | bg-igarba-purple-400 opacity-90 text-white | shadow-xl | hover:scale-110 hover:bg-igarba-purple-500 hover:opacity-100'
+
+			<a
+				class='flex justify-center items-center gap-2
+          py-2 px-4
+          rounded
+          text-black font-semibold
+          bg-igarba-purple-400 hover:bg-igarba-purple-300
+          hover:shadow-md
+          hover:-translate-y-1
+          transition duration-150 ease-in-out
+          [&>svg]:w-6 [&>svg]:h-6'
+				href='/cv-iván-garcía-ballesteros.pdf'
+				download='cv-iván-garcía-ballesteros.pdf'
+			>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					class='text-white'
+					width='24'
+					height='24'
+					viewBox='0 0 24 24'
+					stroke-width='2'
+					stroke='currentColor'
+					fill='none'
+					stroke-linecap='round'
+					stroke-linejoin='round'
 				>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						class='icon icon-tabler icon-tabler-download'
-						width='24'
-						height='24'
-						viewBox='0 0 24 24'
-						stroke-width='2'
-						stroke='currentColor'
-						fill='none'
-						stroke-linecap='round'
-						stroke-linejoin='round'
-					>
-						<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-						<path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2'></path>
-						<path d='M7 11l5 5l5 -5'></path>
-						<path d='M12 4l0 12'></path>
-					</svg>
-					<span>CV</span>
-				</button>
+					<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+					<path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2'></path>
+					<path d='M7 11l5 5l5 -5'></path>
+					<path d='M12 4l0 12'></path>
+				</svg>
+				<span class='text-white'>CV</span>
 			</a>
 		</div>
 	</div>
