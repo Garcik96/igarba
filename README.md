@@ -4,7 +4,7 @@
 
 Este es mi porfolio personal, `creado con Astro 🚀`, donde vas a poder encontrar tanto mi experiencia profesional como otros proyectos personales.
 
-[![Mockup igarba.es](/public/img/mockups/igarba-mockup.png)](igarba.es)
+[![Mockup igarba.es](/public/img/mockups/igarba-mockup.webp)](igarba.es)
 
 ## Como probar el proyecto
 
