@@ -1,9 +1,68 @@
 ---
+import { Image } from 'astro:assets'
+
 interface Props {
-	colSpan: number
+	className: string
+	data?: {
+		img: ImageMetadata
+		title: string
+		description: string
+	}
 }
 
-const { colSpan } = Astro.props
+const { className, data } = Astro.props
+const { img, title, description } = data || {}
 ---
 
-<div class=`col-span-10 md:col-span-${colSpan} border border-igarba-orange-600 rounded-xl`></div>
+<article
+	class=`
+    ${className}
+    group
+    flex flex-col ${data ? 'justify-end items-start' : 'justify-center items-center'}
+    p-8
+    overflow-hidden
+    rounded-lg
+    border border-gray-700
+    [&>*]:transition [&>*]:duration-150 [&>*]:ease-in-out`
+>
+	{
+		data ? (
+			<>
+				<Image class='opacity-5 group-hover:opacity-50' src={img!} alt={title!} />
+
+				<h2 class='text-white text-xl font-bold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
+					{title!}
+				</h2>
+
+				<p class='text-gray-400 text-md font-semibold | text-pretty | translate-y-[4.5rem] group-hover:translate-y-0'>
+					{description!}
+				</p>
+
+				<a
+					class='bg-zinc-700 hover:bg-zinc-500
+        text-white
+        py-2 px-4
+        mt-2
+        rounded
+        cursor-pointer
+        translate-y-[4.5rem] group-hover:translate-y-0'
+				>
+					Ver proyecto
+				</a>
+			</>
+		) : (
+			<span class='text-white text-2xl'>Proximamente</span>
+		)
+	}
+</article>
+
+<style>
+	article {
+		box-shadow: inset 0px -5px 60px -5px #374151;
+		transition: box-shadow ease-in-out 0.25s;
+	}
+
+	article:hover {
+		box-shadow: inset 0px -5px 0px -5px #374151;
+	}
+</style>
