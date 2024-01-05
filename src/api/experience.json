@@ -1,11 +1,20 @@
 [
   {
     "type": "work",
+    "organization": "Muchosol",
+    "url": "https://www.muchosol.es",
+    "title": "Frontend Developer",
+    "description": "",
+    "startDate": "08/01/2024"
+  },
+  {
+    "type": "work",
     "organization": "Plexus Tech",
     "url": "https://www.plexus.es",
     "title": "Frontend Developer",
     "description": "<p>He participado en los distintos proyectos de contratación de seguros de protección para el Banco Santander, en los que he podido aportar:</p><ul><li>Desarrollo de nuevos evolutivos utilizando Angular</li><li>Mantenimiento del código legacy y migraciones a las nuevas versiones de Angular</li><li>Control del estado de la aplicación haciendo uso del patrón Redux con librerías como NgRx y Akita</li><li>Implementación de test unitarios mediante Karma y Jasmine</li><li>Implementación de test E2E con Cypress</li><li>Maquetación responsive de las aplicaciones para así unificar las interfaces de los distintos productos</li><li>Implementación de componentes propios, proporcionados por el cliente y de librerías externas como Angular Material</li><li>Gestión de control de versiones (Git) e integración continua (CI/CD) con Jenkins</li><li>Apoyo de forma puntual es desarrollos de back utilizando Spring Boot</li></ul><p>Lo que implica en la mejora de la calidad y estabilidad de los productos, consiguiendo un incremento de las contrataciones, llegando así a superar cada mes las cuotas de ventas propuestas.</p>",
-    "startDate": "01/08/2022"
+    "startDate": "01/08/2022",
+    "endDate": "05/01/2024"
   },
   {
     "type": "work",
