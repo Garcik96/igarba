@@ -15,9 +15,9 @@
     "lint:eslint:fix": "eslint . --ext .js,.astro,.ts,.tsx --fix"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/onest": "^5.0.2",
-    "astro": "^3.3.0",
+    "astro": "^4.15.6",
     "moment": "^2.29.4",
     "tailwindcss": "^3.4.0"
   },
